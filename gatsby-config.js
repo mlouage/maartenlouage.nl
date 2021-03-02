@@ -3,6 +3,13 @@ module.exports = {
     title: "maartenlouage.nl",
     siteUrl: "https://www.maartenlouage.nl/"
   },
+  flags: {
+    FAST_DEV: true,
+    DEV_SSR: true,
+    PRESERVE_WEBPACK_CACHE: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    PARALLEL_SOURCING: true
+  },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-sharp",
@@ -10,6 +17,7 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-gatsby-cloud",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -26,5 +34,13 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /svg/
+        }
+      }
+    }
   ],
 };

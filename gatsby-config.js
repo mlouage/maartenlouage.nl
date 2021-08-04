@@ -16,6 +16,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-mdx",
+    "gatsby-plugin-image",
     "gatsby-transformer-sharp",
     "gatsby-plugin-gatsby-cloud",
     {

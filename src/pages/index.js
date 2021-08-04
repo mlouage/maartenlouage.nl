@@ -1,11 +1,18 @@
 import React from "react"
-import UnderConstruction from '../images/svg/under_construction.svg';
+import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
   return (
-    <>
-      <UnderConstruction />
-    </>
+    <div className="logo">
+      <StaticImage
+        src="../images/logo.png"
+        alt="Maarten Louage"
+        placeholder="blurred"
+        layout="fixed"
+        width={250}
+       height={250}
+      />
+    </div>
   )
 }
 

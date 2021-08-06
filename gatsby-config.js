@@ -42,6 +42,16 @@ module.exports = {
           include: /svg/
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Caveat Brush\:400`,
+          `Roboto\:400`,
+        ],
+        display: 'swap'
+      }
     }
   ],
 };

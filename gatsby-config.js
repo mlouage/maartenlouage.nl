@@ -5,7 +5,6 @@ module.exports = {
   },
   flags: {
     FAST_DEV: true,
-    DEV_SSR: true,
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
     PARALLEL_SOURCING: true
   },
@@ -33,14 +32,6 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
-    },
-    {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /svg/
-        }
-      }
     },
     {
       resolve: `gatsby-plugin-google-fonts`,

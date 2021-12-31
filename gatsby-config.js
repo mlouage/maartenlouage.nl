@@ -5,8 +5,6 @@ module.exports = {
   },
   flags: {
     FAST_DEV: true,
-    DEV_SSR: true,
-    PRESERVE_WEBPACK_CACHE: true,
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
     PARALLEL_SOURCING: true
   },
@@ -16,6 +14,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-mdx",
+    "gatsby-plugin-image",
     "gatsby-transformer-sharp",
     "gatsby-plugin-gatsby-cloud",
     {
@@ -35,11 +34,13 @@ module.exports = {
       __key: "pages",
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        rule: {
-          include: /svg/
-        }
+        fonts: [
+          `Caveat Brush\:400`,
+          `Roboto\:400`,
+        ],
+        display: 'swap'
       }
     }
   ],

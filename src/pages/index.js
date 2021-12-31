@@ -5,6 +5,7 @@ const IndexPage = () => {
   return (
     <>
       <div className="container">
+        <div>
         <div className="logo">
           <StaticImage
             src="../images/logo.png"
@@ -17,9 +18,10 @@ const IndexPage = () => {
         </div>
         <p>
           Webdevelopment <br />
-          &amp; <br />
+          <span className="handwritten">&amp;</span> <br />
           Online courses about webdevelopment
         </p>
+        </div>
       </div>
     </>
   )

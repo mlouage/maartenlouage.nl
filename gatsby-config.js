@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: "maartenlouage.nl",
-    siteUrl: "https://www.maartenlouage.nl/"
+    description: `Webdevelopment and online courses`,
+    twitterUsername: `@maartenlouage`,
+    siteUrl: `https://www.maartenlouage.nl/`
   },
   flags: {
     FAST_DEV: true,
@@ -10,7 +12,6 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-sharp",
-    "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-mdx",
     "gatsby-plugin-image",

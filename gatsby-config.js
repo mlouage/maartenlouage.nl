@@ -9,7 +9,6 @@ module.exports = {
     PARALLEL_SOURCING: true
   },
   plugins: [
-    "gatsby-plugin-sass",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",

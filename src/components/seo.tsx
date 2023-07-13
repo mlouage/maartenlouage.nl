@@ -8,13 +8,14 @@ type SEOProps = {
 }
 
 export const Seo: React.FC<React.PropsWithChildren<SEOProps>> = ({ title, description, pathname, children }) => {
-  const { title: defaultTitle, description: defaultDescription, siteUrl, twitterUsername } = useSiteMetadata()
+  const { title: defaultTitle, description: defaultDescription, siteUrl, twitterUsername, mastodonUsername } = useSiteMetadata()
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
     url: `${siteUrl}${pathname || ``}`,
-    twitterUsername
+    twitterUsername,
+    mastodonUsername
   }
 
   return (
@@ -26,6 +27,7 @@ export const Seo: React.FC<React.PropsWithChildren<SEOProps>> = ({ title, descri
       <meta name="twitter:url" content={seo.url} />
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:creator" content={seo.twitterUsername} />
+      <meta name="mastodon:creator" content={seo.mastodonUsername} />
       {children}
     </>
   )

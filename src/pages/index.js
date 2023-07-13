@@ -6,6 +6,7 @@ const IndexPage = () => {
   return (
     <>
       <div className="container">
+      <a rel="me" href="https://mastodon.social/@maartenlouage" style={{display: "none"}}>Mastodon</a>
         <div>
         <div className="logo">
           <StaticImage

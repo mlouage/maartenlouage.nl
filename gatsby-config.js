@@ -3,6 +3,7 @@ module.exports = {
     title: "maartenlouage.nl",
     description: `Webdevelopment and online courses`,
     twitterUsername: `@maartenlouage`,
+    mastodonUsername: `@maartenlouage@mastodon.social`,
     siteUrl: `https://www.maartenlouage.nl/`
   },
   flags: {

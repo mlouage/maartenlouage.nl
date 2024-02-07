@@ -1,19 +1,8 @@
 ---
-
+import Layout from "../layouts/layout.astro";
+const title = "Maarten Louage";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Maarten Louage</title>
-  </head>
-  <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-    <h1>Maarten Louage</h1>
-  </body>
-</html>
+<Layout title={title}>
+  <p>Hello world</p>
+</Layout>

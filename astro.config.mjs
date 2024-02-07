@@ -8,7 +8,7 @@ import sentry from "@sentry/astro";
 // https://astro.build/config
 export default defineConfig({
   integrations: [
-    tailwind(),
+    tailwind({ config: { applyBaseStyles: false }}),
     react(),
     sentry({
       dsn: "https://9fcd43e03ef354dc9e3160c776d3a16e@o4506689025998848.ingest.sentry.io/4506689030324224",

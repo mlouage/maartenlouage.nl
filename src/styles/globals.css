@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 168deg 29% 97%; /* 50 */
+    --primary: 177deg 34% 40%; /* 500 */
+    --primary-text: 180deg 32% 26%; /* 700 */
+    --primary-hover: 179deg 35% 32%; /* 600 */
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    :root {
+      --background: 180deg 37% 10%; /* 950 */
+      --primary: 174deg 33% 64%; /* 300 */
+      --secondary: 174deg 35% 78%; /* 200 */
+      --primary-text: 168deg 29% 97%; /* 50 */
+      --primary-hover: 177deg 34% 40%; /* 500 */
+    }
+  }
+}

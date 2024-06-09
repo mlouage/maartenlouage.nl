@@ -8,6 +8,6 @@ export default defineConfig({
     tailwind(),
     react(),
   ],
-  output: "server",
+  output: "hybrid",
   adapter: cloudflare()
 });

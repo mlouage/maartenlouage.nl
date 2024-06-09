@@ -1,8 +1,14 @@
 ---
 import Layout from "../layouts/layout.astro";
+
+import Logo from "../images/logo.png";
+
 const title = "Maarten Louage";
 ---
 
 <Layout title={title}>
-  <p>Hello world</p>
+  <div>
+    <img src={Logo.src} alt="Maarten Louage's website logo" />
+    <p class="text-primary-500 text-4xl font-handwritten">Maarten Louage</p>
+  </div>
 </Layout>
